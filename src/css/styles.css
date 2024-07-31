@@ -73,6 +73,7 @@ nav{
 .picture-container{
     width: 40%;
     margin-left: 300px;
+    padding-right: 100px;
 }
 
 h1{
@@ -104,4 +105,157 @@ h1{
     width:320px;
     border-radius: 100%;
     border: #BDC100 2px solid;
+}
+
+
+@media(max-width:1235px){
+
+    .picture-container{
+        width: 25%;
+        margin-left: 180px;
+        
+    }
+
+    .me-container{
+        width: 75%;
+        padding-left: 140px;
+    }
+
+    h1{
+        width: 100%;
+    }
+    
+    nav{
+        margin-right: 100px;
+    }
+
+}
+
+
+
+
+@media(max-width:1100px){
+    
+    nav{
+        margin-right: 50px;
+    }
+
+    .logo{
+        margin-left: 50px;
+    }
+
+    .picture-container{
+        width: 20%;
+        margin-left: 130px;
+    }
+    
+    .me-pic{
+        width: 200px;
+        margin-top: 230px;
+    }
+/* ------------------------------------------------ */
+    .me-container{
+        width: 80%;
+        padding-left: 100px;
+        margin-top: 200px;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .icon{
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+
+    .rol{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+@media(max-width:1000px){
+    nav{
+        margin-right: 20px;
+    }
+
+    .logo{
+        margin-left: 20px;
+        width: 220px;
+    }
+
+    .me-pic{
+        margin-top: 250px;
+    }
+}
+
+
+
+@media(max-width:910px){
+    .me-container{
+        width: 80%;
+        padding-left: 70px;
+    }
+
+    /* ------------------------------------ */
+
+    .picture-container{
+        width: 20%;
+        margin-left: 90px;
+    }
+}
+
+
+
+
+@media(max-width:862px){
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav{
+        margin-right: 0px;
+    }
+
+    .logo{
+        margin-left: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+
+    .me-pic{
+        margin-top: 260px;
+    }
+}
+
+@media(max-width:800px){
+    .me-container{
+        width: 90%;
+        padding-left: 50px;
+        margin-top: 120px;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 33px;
+    }
+
+    .icon{
+        font-size: 27px;
+        margin-right: 10px;
+    }
+
+
+    .rol{
+        font-size: 27px;
+        margin-top: 10px;
+    }
 }
