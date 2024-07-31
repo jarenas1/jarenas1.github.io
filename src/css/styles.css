@@ -90,16 +90,16 @@ h1{
     margin-top: 25px;
     color: var(--green);
     text-shadow: 0.5px 0.5px 1px rgb(208, 255, 174);
+    font-size: 35px;
 }
 
 .me{
     color:rgb(148, 148, 148);
-    width: 70%;
-    font-size: larger;
+    font-size: 20px;
 }
 
 .me-pic{
-    margin-top: 230px;
+    margin-top: 280px;
     width:320px;
     border-radius: 100%;
     border: #BDC100 2px solid;
