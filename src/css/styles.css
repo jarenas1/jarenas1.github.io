@@ -1,4 +1,5 @@
 @import url('./normalize.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
@@ -63,10 +64,43 @@ nav{
 }
 
 .me-container{
+    margin-top: 240px;
     width: 60%;
+    padding-left: 190px;
 }
 
 .picture-container{
     width: 40%;
     margin-left: 300px;
+}
+
+h1{
+    font-size: 60px;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.icon{
+    color: var(--green);
+    font-size:xx-large;
+    margin-right: 35px;
+}
+
+.rol{
+    margin-top: 25px;
+    color: var(--green);
+    text-shadow: 0.5px 0.5px 1px rgb(208, 255, 174);
+}
+
+.me{
+    color:rgb(148, 148, 148);
+    width: 70%;
+    font-size: larger;
+}
+
+.me-pic{
+    margin-top: 230px;
+    width:320px;
+    border-radius: 100%;
+    border: #BDC100 2px solid;
 }
