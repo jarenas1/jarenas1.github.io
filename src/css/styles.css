@@ -6,7 +6,7 @@
 :root{
     --background:#232323;
     --text:white;
-    --green: #BDC100;
+    --green: #bdc100;
 }
 
 body{
@@ -91,7 +91,7 @@ h1{
 .rol{
     margin-top: 25px;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 1px rgb(208, 255, 174);
+    text-shadow: 0.5px 0.5px 1px #bec100;
     font-size: 35px;
 }
 
@@ -110,111 +110,114 @@ h1{
 
 .skills-title{
     margin-top: 31vh;
-    color: var(--text);
+    color: var(--green);
     font-size: 40px;
     text-align: center;
 }
 
 /*------------------CARROUSEL------------------*/
-
 .big-cont {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .carousel {
-    width: 70%; /* Reduced width */
-    margin: 0;
-  }
-  
-  @media(min-width:768px) {
-    .carousel {
-      margin: 0 auto;
-    }
-  }
-  
-  .carrousel-list {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 304px;
-    padding: 10px 0;
-    margin: 0 auto;
-    max-width: 90vw;
-    overflow: hidden;
-  }
-  
-  .carrousel-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-    gap: 85px;
-  }
-  
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carrousel-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.carrousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrousel {
+  flex: 0 0 20%;
+  min-width: 20%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resaviadahp{
+    width: 110px !important;
+}
+
+.carrousel img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  filter: drop-shadow(0 2px 5px#ffffff73);
+}
+
+.carrousel h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.carrusel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--green);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+}
+
+.carrusel-prev {
+  left: 10px;
+}
+
+.carrusel-next {
+  right: 10px;
+}
+
+@media (max-width: 1024px) {
   .carrousel {
-    position: relative;
-    width: calc(20% - 20px); /* 5 items per view with spacing */
-    padding: 0 10px; /* Increased spacing */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+    flex: 0 0 25%;
+    min-width: 25%;
   }
-  
-  .carrousel img {
-    object-fit: cover;
-    height: 150px; /* Adjust size as needed */
-    width: 150px; /* Adjust size as needed */
-    border-radius: 15px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-    transition: .3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .carrousel {
+    flex: 0 0 33.33%;
+    min-width: 33.33%;
   }
-  
-  @media (min-width: 768px) {
-    .carrousel {
-      width: calc(20% - 30px); /* Adjust for larger screens */
-      padding: 0 15px; /* Increased spacing */
-    }
-    .carrousel img {
-      width: 140px; /* Adjust size as needed */
-    }
+}
+
+@media (max-width: 480px) {
+  .carrousel {
+    flex: 0 0 50%;
+    min-width: 50%;
   }
-  
-  .carrusel-arrow {
-    border-radius: 30px;
-    background-color: var(--text);
-    position: absolute;
-    z-index: 4;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    border: 0;
-    cursor: pointer;
+
+  .big-cont{
+    margin-left: 10%;
   }
-  
-  .carrusel-arrow:focus {
-    outline: 0;
-  }
-  
-  .carrusel-arrow svg {
-    width: 12px;
-    height: 100%;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .carrusel-prev {
-    left: 0;
-  }
-  
-  .carrusel-next {
-    right: 0;
-  }
-  
+}
   h4 {
     margin: 10px 0 20px; /* Add some margin */
     padding: 0;
