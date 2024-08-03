@@ -65,7 +65,7 @@ nav{
 }
 
 .me-container{
-    margin-top: 240px;
+    margin-top: 20vh;
     width: 60%;
     padding-left: 190px;
 }
@@ -101,11 +101,20 @@ h1{
 }
 
 .me-pic{
-    margin-top: 280px;
+    margin-top: 25vh;
     width:320px;
     border-radius: 100%;
     border: #BDC100 2px solid;
 }
+/* -----------------MY SKILLS------------------------------------------------ */
+
+.skills-title{
+    margin-top: 31vh;
+    color: var(--text);
+    font-size: 40px;
+    text-align: center;
+}
+
 
 
 @media(max-width:1235px){
@@ -151,13 +160,13 @@ h1{
     
     .me-pic{
         width: 200px;
-        margin-top: 230px;
+        margin-top: 18vh;
     }
 /* ------------------------------------------------ */
     .me-container{
         width: 80%;
         padding-left: 100px;
-        margin-top: 200px;
+        margin-top: 15vh;
     }
 
     h1{
