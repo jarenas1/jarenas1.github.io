@@ -48,3 +48,47 @@ updateCarousel();
 
 // Ajustar el carrusel cuando cambia el tamaño de la ventana
 window.addEventListener('resize', updateCarousel);
+
+
+//---------------------------------PALABRAS--------------------------------
+
+let txt = document.getElementById('rol');
+const words = ["BackEnd Developer", "FrontEnd Developer","UI/UX Designer"];
+let currentIndex = 0;
+
+function escribir() {
+ txt.textContent = "";
+  let textArr = words[currentIndex];
+  textArr = textArr.split("");
+
+  let i = 0;
+
+  const printString = setInterval(() => {
+     txt.textContent += textArr[i];
+      i++;
+      if (i == textArr.length) {
+          clearInterval(printString);
+          setTimeout(() => {
+              deleteWord()
+          }, 1000); 
+      }
+  }, 200); 
+}
+
+function deleteWord() {
+  let text = txt.textContent;
+
+  const deleteString = setInterval(() => {
+      text = text.slice(0, -1);
+      txt.textContent = text;
+      if (text == "") {
+          clearInterval(deleteString);
+          currentIndex = (currentIndex + 1) % words.length; //Cambiar a la siguiente palabra
+          setTimeout(() => {
+              escribir()
+          }, 200)
+      }
+  }, 100) //Tiempo en borrar cada una de las letras
+}
+
+escribir();
