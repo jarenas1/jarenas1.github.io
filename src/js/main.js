@@ -90,5 +90,4 @@ function deleteWord() {
       }
   }, 100) //Tiempo en borrar cada una de las letras
 }
-
 escribir();

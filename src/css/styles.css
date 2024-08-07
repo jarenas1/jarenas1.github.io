@@ -9,6 +9,27 @@
     --green: #bdc100;
 }
 
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+/* Estilo del track (área por donde se mueve el thumb) */
+::-webkit-scrollbar-track {
+    background: var(--background);
+    border-radius: 15px; 
+}
+
+/* Estilo del thumb (la parte móvil de la barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+    background: var(--green); 
+    border-radius: 10px; 
+}
+
+/* Estilo del thumb cuando se pasa el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 body{
     background-color: var(--background);
     font-family: "Roboto", sans-serif;
