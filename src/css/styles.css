@@ -131,14 +131,15 @@ h1{
 /* -----------------MY SKILLS------------------------------------------------ */
 
 .skills-title{
-    margin-top: 31vh;
+    margin-top: 34vh;
     color: var(--text);
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
 }
 
 /*------------------CARROUSEL------------------*/
 .big-cont {
+    margin-top: 10vh;
   width: 100%;
   overflow: hidden;
 }
@@ -242,12 +243,76 @@ h1{
 }
   h4 {
     margin: 10px 0 20px; /* Add some margin */
+    margin-bottom: 20px;
     padding: 0;
     text-align: center;
+    font-weight: 700;
+    font-size: 20px;
     color: var(--text)
   }  
 
 
   /* ---------------------------------------projects------------------------------------------ */
 
-.projects-container {}
+.projects-title{
+    text-align: center;
+    margin-top: 25vh;
+    color: var(--text);
+    font-size: 35px;
+}
+
+.projects-desc{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.page1{
+    border: 1px solid var(--text);
+    border-radius: 200px 0px 0px 200px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.page1:hover{
+    color: #ffffff;
+}
+
+.page2{
+    border: 1px solid var(--text);
+    border-radius: 0px 200px 200px 0px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    font-weight: 500;
+}
+
+.page2:hover{
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.selectors{
+    display: flex;
+    justify-content: center;
+
+}
+
+.selected{
+    background-color: var(--green);
+    color: var(--background);
+}

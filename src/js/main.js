@@ -53,7 +53,7 @@ window.addEventListener('resize', updateCarousel);
 //---------------------------------PALABRAS--------------------------------
 
 let txt = document.getElementById('rol');
-const words = ["BackEnd Developer", "FrontEnd Developer","UI/UX Designer"];
+const words = ["Backend Developer", "Frontend Developer","UI/UX Designer"];
 let currentIndex = 0;
 
 function escribir() {
@@ -91,3 +91,25 @@ function deleteWord() {
   }, 100) //Tiempo en borrar cada una de las letras
 }
 escribir();
+
+//---------------------------------PROJECTS--------------------------------
+
+const selector = document.querySelector(".selectors")
+
+selector.addEventListener("click", (event)=> {
+  idSelector = event.target.getAttribute("id");
+
+  if(idSelector != null){
+    clearbtn();
+    event.target.classList.add("selected")
+  }
+})
+
+function clearbtn() {
+  const selectedbtn = document.querySelectorAll('.selected')
+  for (const btn of selectedbtn) {
+      btn.classList.remove("selected");
+    }
+}
+
+
