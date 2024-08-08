@@ -98,6 +98,8 @@ const selector = document.querySelector(".selectors")
 
 selector.addEventListener("click", (event)=> {
   idSelector = event.target.getAttribute("id");
+  console.log(idSelector);
+  
 
   if(idSelector != null){
     clearbtn();
