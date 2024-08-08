@@ -293,6 +293,8 @@ h1{
 
 .page1:hover{
     color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .page2{
@@ -309,6 +311,7 @@ h1{
 .page2:hover{
     color: #ffffff;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 

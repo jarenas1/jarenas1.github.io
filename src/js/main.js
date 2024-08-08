@@ -98,7 +98,8 @@ const selector = document.querySelector(".selectors")
 
 selector.addEventListener("click", (event)=> {
   idSelector = event.target.getAttribute("id");
-  console.log(idSelector);
+  clear()
+  printProjects(idSelector)
   
 
   if(idSelector != null){
@@ -114,4 +115,132 @@ function clearbtn() {
     }
 }
 
+
+//---------------------------------CARDS--------------------------------
+
+const projectContainer = document.querySelector(".projects-contatiner")
+function printProjects(id){
+    projects.forEach(project => {      
+        if(project.from == id && project.url !== null){
+          console.log(project.from);
+          
+          projectContainer.innerHTML += `
+           <div class="image-container">
+          <img src=${project.image} alt="">
+          <div class="overlay">
+              <h2>${project.title}</h2>
+              <p>${project.description}</p>
+              <div class="buttons">
+                  <a href="${project.gh}">See code</a>
+                  <a href="${project.url}">See website</a>
+              </div>
+          </div>
+      </div>
+          `
+        }else if(project.from == id && project.utl == null){
+          projectContainer.innerHTML += `
+           <div class="image-container">
+          <img src=${project.image} alt="">
+          <div class="overlay">
+              <h2>${project.title}</h2>
+              <p>${project.description}</p>
+              <div class="buttons">
+                  <a href="${project.gh}">See code</a>
+              </div>
+          </div>
+      </div>
+          `
+        }
+    });
+}
+
+function clear(){
+  projectContainer.innerHTML = "";
+}
+
+function defaultProjects(){
+
+}
+
+
+
+
+
+
+//---------------------------------DATA OF PROJECTS--------------------------------
+
+const projects = [
+  {
+      id: 1,
+      title: 'ARQUON',
+      description: 'Landing page created for an architecture firm in the city of Medellín ',
+      image: '../../public/img/prueba1.jpg',
+      gh: "https://github.com/jarenas1/ARQUON.git",
+      url : null,
+      from : "page1" 
+  },
+  {
+      id: 2,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page1" 
+  },
+  {
+      id: 3,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page1" 
+  },
+  {
+      id: 4,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page1" 
+  },
+  {
+      id: 5,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page2" 
+  },
+  {
+      id: 6,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page2" 
+  },
+  {
+      id: 7,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page2" 
+  },
+  {
+      id: 8,
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: 'project1.jpg',
+      gh: "/",
+      url : "/",
+      from : "page2" 
+  }
+]
 
